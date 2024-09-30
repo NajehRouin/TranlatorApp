@@ -1,5 +1,9 @@
 # Translator App
 
+this project uses kotlin language
+
+## Learn More
+To learn ML Kit, check out the [ML Kit](https://developers.google.com/ml-kit/guides?hl=fr).
 
 ## Video
 
