@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="18dp"
+    android:background="@drawable/trans">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:background="@drawable/rounded_red_background"
+
+        android:padding="16dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            app:srcCompat="@drawable/imagetrans" />
+
+        <Spinner
+            android:id="@+id/inputLanguageSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/rounded_edittext"
+            android:spinnerMode="dropdown" />
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/inputLanguageSpinner"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/inputEditText"
+                android:layout_width="339dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_edittext"
+                android:gravity="start"
+                android:hint="Enter text"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/voiceInputButton"
+                android:layout_width="65dp"
+                android:layout_height="54dp"
+                android:layout_alignEnd="@+id/inputEditText"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="273dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@null"
+                android:contentDescription="Voice Input"
+                android:src="@drawable/baseline_mic_none" />
+        </RelativeLayout>
+
+        <Spinner
+            android:id="@+id/outputLanguageSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/relative"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/translateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outputLanguageSpinner"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/blue"
+            android:padding="12dp"
+            android:text="Translate"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/outputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/translateButton"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="start"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/speakButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outputText"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="@color/blue"
+            android:padding="12dp"
+            android:text="listen to the translation"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

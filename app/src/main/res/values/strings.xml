@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <resources>
+        <string name="app_name">Translator App</string>
+        <string name="enter_text">Enter text in %1$s</string>
+        <string name="translate_to">Translate to %1$s</string>
+
+    </resources>
