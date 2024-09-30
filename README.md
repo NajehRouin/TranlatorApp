@@ -1,1 +1,1 @@
-#Tranlator App using 
+# Getting Started with Create React App
